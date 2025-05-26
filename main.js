@@ -87,7 +87,7 @@ buttonsContainer.addEventListener("click", (e) => {
       } else {
         currentScreen = ["b", "r", "u", "h", ".", ".", "."]
       }
-    } else if (buttonClicked === "X") {
+    } else if (buttonClicked === "x") {
       if (operator === 0) {
         operator = "multiply"
         firstNum = Number(currentScreen.join(""))
@@ -115,13 +115,13 @@ buttonsContainer.addEventListener("click", (e) => {
     }
   } else {
     screen.textContent = "0"
-    screen.textContent = result
+    screen.textContent = String(result).slice(0, 12)
   }
 
   if (buttonClicked !== "=") {
     let str = currentScreen.join("")
     let value = Number(str)
-    screen.textContent = currentScreen.join("")
+    screen.textContent = currentScreen.join("").slice(0, 12)
     console.log(value);
   }
 }
