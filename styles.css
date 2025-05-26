@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(54, 54, 54);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: rgb(125, 92, 48);
+  min-height: fit-content;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 10px;
+}
+
+.title {}
+
+.el-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.screen {
+  background-color: gray;
+  min-height: 4rem;
+  min-width: 87%;
+  border-radius: 5px;
+}
+
+.row {
+  min-width: 87%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  min-width: 4rem;
+  min-height: 3rem;
+  background-color: rgb(220, 184, 141);
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.screen {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0rem 1rem 0rem;
+  flex-direction: row-reverse;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
